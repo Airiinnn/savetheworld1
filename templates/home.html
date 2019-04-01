@@ -1,0 +1,42 @@
+{% extends "layout.html" %}
+
+{%block body %}
+
+      <h1>Where are you right now?</h1>
+
+      <form action="/directions" method="post">
+          <select name="Current Location">
+              <option disabled selected value="">Location</option>
+              <option value="audi">Auditorium</option>
+              <option value="can">Canteen</option>
+              <option value="go">General Office</option>
+              <option value="hall">Hall</option>
+              <option value="ish">ISH</option>
+              <option value="lib">Library</option>
+              <option value="low">Lower Sec Block</option>
+              <option value="pac">PAC</option>
+              <option value="sh">Senior High Block</option>
+              <option value="tf">Track/Field</option>
+              <option value="up">Upper Sec Block</option>
+          </select>
+
+      <h1>Where would you like to go to?</h1>
+
+          <select name="Destination">
+              <option disabled selected value="">Location</option>
+              <option value="audi">Auditorium</option>
+              <option value="can">Canteen</option>
+              <option value="go">General Office</option>
+              <option value="hall">Hall</option>
+              <option value="ish">ISH</option>
+              <option value="lib">Library</option>
+              <option value="low">Lower Sec Block</option>
+              <option value="pac">PAC</option>
+              <option value="sh">Senior High Block</option>
+              <option value="tf">Track/Field</option>
+              <option value="up">Upper Sec Block</option>
+          </select>
+          <br><br>
+          <input type="submit" value="Submit">
+
+{% endblock %}
